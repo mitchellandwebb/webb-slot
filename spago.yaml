@@ -4,10 +4,22 @@ package:
     - console
     - effect
     - prelude
+    - webb-refer
+    - webb-monad
   test:
     main: Test.Main
     dependencies: []
+    
+  publish:
+    version: 0.0.1
+    license: BSD-3-Clause
+    location:
+      githubOwner: mitchellandwebb
+      githubRepo: webb-slot
+
 workspace:
   packageSet:
     registry: 69.5.1
-  extraPackages: {}
+  extraPackages:
+    webb-refer: 0.0.3
+    webb-monad: 0.0.2
